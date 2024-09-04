@@ -1,8 +1,43 @@
 @charset "utf-8";
 
 /* header */
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+}
+
 header.action {
     top: 0;
+}
+
+header nav>.main {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .main_menu {
+    width: 200px;
+    height: 60px;
+}
+
+/* section 공통 */
+section {
+    padding-top: 60px;
+    height: 100vh;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 /* section1 */
@@ -40,5 +75,42 @@ header.action {
 /* section2 */
 /* section3 */
 /* section4 */
+#sec4 h2 {
+    width: 1000px;
+    margin: 40px auto 40px;
+}
+
+#sec4 .container>ul {
+    width: 1000px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#sec4 .container ul li {
+    width: 200px;
+    height: 200px;
+    transition: .3s;
+}
+
+#sec4 .container img:hover #sec4 .container img {
+    transform: scale(1.2);
+}
+
+#sec4 .container li:not(:nth-of-type(4n)) {
+    margin-right: 24px;
+}
+
 /* section5 */
 /* footer */
+footer {
+    height: 100px;
+}
+
+@media (min-width: 760px) {
+
+}
+
+@media (min-width: 1025px) {}
