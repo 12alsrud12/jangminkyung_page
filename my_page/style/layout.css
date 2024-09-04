@@ -20,6 +20,34 @@ header nav .main_menu {
 
 section {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#sec4 .container>ul {
+    width: 1000px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#sec4 .container ul li {
+    width: 200px;
+    height: 200px;
+}
+
+#sec4 .container li:not(:nth-of-type(4n)) {
+    margin-right: 24px;
 }
 
 footer {

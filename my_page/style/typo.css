@@ -21,6 +21,10 @@ h2 {
     font-size: 7em;
 }
 
+section>h2 {
+    letter-spacing: 2px;
+}
+
 section li {
     font-size: 1.6em;
 }
