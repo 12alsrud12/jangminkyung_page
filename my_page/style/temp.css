@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-body * {
-    border: 1px solid red;
-}
-
 body {
     background: #fff;
 }
@@ -11,4 +7,10 @@ body {
 header {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(4px);
+}
+
+#sec1 h1 {
+    color: #fff;
+    text-shadow: 0 0 4px #fff;
+    letter-spacing: 16px;
 }

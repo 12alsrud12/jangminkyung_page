@@ -1,5 +1,44 @@
 @charset "utf-8";
 
+/* header */
 header.action {
     top: 0;
 }
+
+/* section1 */
+#sec1 {
+    display: flex;
+    position: relative;
+    background: url(../../assets/index/sec1.jpg) 50% 50%/cover fixed;
+}
+
+#sec1 div.my_ill {
+    position: absolute;
+    left: 20%;
+    bottom: 32%;
+}
+
+#sec1 h1 {
+    position: absolute;
+    left: 32px;
+    bottom: 10%;
+    animation: s1h1 1s;
+}
+
+@keyframes s1h1 {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 32px;
+        opacity: 1;
+    }
+}
+
+/* section2 */
+/* section3 */
+/* section4 */
+/* section5 */
+/* footer */

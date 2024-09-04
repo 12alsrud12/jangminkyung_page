@@ -19,6 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 if (next >= 500) {
                     header.classList.add("action");
                 }
+
             } else if (e.deltaY < 0) {
                 // 마우스휠 올림
                 if (docEle.scrollTop < wh) return;
