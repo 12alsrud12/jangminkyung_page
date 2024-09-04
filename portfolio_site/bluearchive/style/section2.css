@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+/* 전체 */
+body {
+    background: url(../image/bg.jpg) no-repeat 100% 100%/cover fixed;
+}
+
+.tab_btn ul li.ck {
+    color: #f0f6f8;
+    background: #f0f6f8;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1500px;
+}
+
+/* //전체 */
+
+/* header */
+header {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    line-height: 80px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    position: absolute;
+    left: 16px;
+    top: 5px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul>li {
+    margin-right: 24px;
+}
+
+.sns {
+    margin-left: 30px;
+}
+
+.sns li::before {
+    content: '★';
+    color: #00D4EA;
+    margin-right: 15px;
+}
+
+.sns::before {
+    content: '|';
+    margin-right: 46px;
+    color: #00D4EA;
+}
+
+.sns li:hover {
+    font-weight: 700;
+}
+
+/* //header */
+
+/* title */
+#title {
+    margin: 0 auto;
+    width: 738px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    animation: title 1.5s;
+}
+
+#obj1,
+#obj2,
+#obj3 {
+
+    position: absolute;
+
+}
+
+#obj1 {
+    top: 70px;
+    z-index: 1;
+}
+
+#obj2 {
+    top: 130px;
+    z-index: 2;
+    animation: obj2 1s;
+}
+
+#obj3 {
+    top: 230px;
+    z-index: 3;
+    animation: obj3 1s;
+}
+
+/* animation */
+@keyframes title {
+    0% {
+        top: -20px;
+        opacity: 0;
+    }
+
+    85% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes obj2 {
+    0% {
+        left: -20px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes obj3 {
+    0% {
+        right: -10px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 20%;
+        opacity: 1;
+    }
+}
+
+
+/* //title */
+
+/* tabs */
+
+#tabs>div {
+    display: none;
+}
+
+#tabs>div.on {
+    display: block;
+}
+
+#tabs {
+    border: 3px solid #007ccf;
+    padding-top: 15px;
+    width: 1500px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    background: #f0f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.tab_btn {
+    position: relative;
+    top: 3px;
+    z-index: 2;
+    width: 1450px;
+    display: flex;
+}
+
+/* //tabs */
+
+/* section */
+.inner>p {
+    margin: 0 0 30px;
+}
+
+#s2 {
+    padding-top: 400px;
+    margin: 0 auto;
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#s2 h2 {
+    font-size: 48px;
+    margin: 48px 0 24px;
+}
+
+#sub_p {
+    width: 330px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#sub_p>p:not(:nth-of-type(2)) {
+    margin: 0 30px 20px 0;
+}
+
+span {
+    font-weight: 700;
+    color: #007cff;
+}
+
+.sp1 {
+    color: #00D4EA;
+}
+
+.tab_btn ul {
+    display: flex;
+}
+
+.tab_btn ul>li {
+    border: 3px solid #007ccf;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    padding: 8px 24px;
+    background: #007ccf;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* tab1 */
+#tab1 {
+    margin: 50px 0;
+}
+
+/* //tab1 */
+
+/* tab3 */
+#tab3 {
+    position: relative;
+}
+
+#tab3>h2 {
+    margin: 0;
+    padding: 30px 0;
+}
+
+.btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 12.5%;
+    top: 55%;
+}
+
+.btn>button {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    color: #F0F6F8;
+    background: #00D4EA;
+}
+
+.btn>button:active {
+    color: #F0F6F8;
+    background: #007cff;
+}
+
+/* //tab3 */
+
+/* teb4 */
+
+#tab4 p {
+    padding: 20px 0;
+}
+
+#tab4 h2 {
+    padding: 0;
+    margin: 0;
+}
+
+#tab4 {
+    margin-bottom: 50px;
+}
+
+
+
+/* //teb4 */
+
+
+/* //section */
+
+
+
+/* footer */
+
+footer {
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    line-height: 100px;
+    color: #F0F6F8;
+    background: #007cff;
+}
+
+.ft_p {
+    display: flex;
+    justify-content: center;
+}
+
+footer>img {
+    position: absolute;
+    margin: 0 10px 0;
+    bottom: -10%;
+    opacity: .7;
+    width: 100px;
+    height: 100px;
+}
+
+/* 캐릭터 */
+.standing {
+    position: fixed;
+    z-index: 10;
+    right: 0%;
+    bottom: -50%;
+    opacity: 1;
+    animation: avater 1s;
+}
+
+@keyframes avater {
+    0% {
+        right: -20%;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.mini {
+    position: fixed;
+    left: 0;
+}
