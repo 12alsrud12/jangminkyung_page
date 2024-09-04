@@ -14,34 +14,27 @@ body {
 
 /* 공통 */
 h1 {
-    font-size: 13.5em;
+    font-size: 10vw;
 }
 
 h2 {
-    font-size: 7em;
+    font-size: 10vw;
 }
 
 section>h2 {
+    text-align: center;
     letter-spacing: 2px;
-}
-
-section li {
-    font-size: 1.6em;
-}
-
-section a {
-    font-size: 2.3em;
 }
 
 /* header typo */
 .main_menu>a {
-    font-size: 2.4em;
+    font-size: 2vw;
     font-weight: 700;
 }
 
 .main_menu {
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 /* footer typo */
@@ -50,6 +43,48 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.4em;
+    font-size: 3vw;
     line-height: 2;
+    color: #fff;
+}
+
+/* 테블릿 */
+@media (min-width: 768px) {}
+
+/* 데스크탑 */
+@media (min-width: 1025px) {
+    h2 {
+        font-size: 7em;
+    }
+
+    section>h2 {
+        text-align: left;
+    }
+
+    section li {
+        font-size: 1.6em;
+    }
+
+    section a {
+        font-size: 2.3em;
+    }
+
+    /* header typo */
+    .main_menu>a {
+        font-size: 2.4em;
+    }
+
+    .main_menu {
+        line-height: 60px;
+    }
+
+    /* footer typo */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4em;
+        line-height: 2;
+    }
 }

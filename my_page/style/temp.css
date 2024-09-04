@@ -14,3 +14,7 @@ header {
     text-shadow: 0 0 4px #fff;
     letter-spacing: 16px;
 }
+
+footer {
+    background: #272727;
+}

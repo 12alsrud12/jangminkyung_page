@@ -1,9 +1,13 @@
 @charset "utf-8";
 
+body * {
+    border: 1px solid red;
+}
+
 /* header */
 header {
     width: 100%;
-    height: 60px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,27 +18,21 @@ header {
 
 header.action {
     top: 0;
+    z-index: 9999;
 }
 
 header nav>.main {
-    width: 1000px;
+    width: 50px;
+    padding: 0 16px;
     display: flex;
-    justify-content: space-between;
 }
 
 header nav .main_menu {
-    width: 200px;
-    height: 60px;
+    height: 40px;
 }
 
 /* section 공통 */
-section {
-    padding-top: 60px;
-    height: 100vh;
-}
-
 .container {
-    width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -44,7 +42,7 @@ section {
 #sec1 {
     display: flex;
     position: relative;
-    background: url(../../assets/index/sec1.jpg) 50% 50%/cover fixed;
+    background: url(../../assets/index/sec1/sec1.jpg) 50% 50%/cover fixed;
 }
 
 #sec1 div.my_ill {
@@ -76,14 +74,12 @@ section {
 /* section3 */
 /* section4 */
 #sec4 h2 {
-    width: 1000px;
     margin: 40px auto 40px;
 }
 
 #sec4 .container>ul {
-    width: 1000px;
-    height: 450px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
@@ -92,25 +88,124 @@ section {
 #sec4 .container ul li {
     width: 200px;
     height: 200px;
-    transition: .3s;
+    margin-bottom: 16px;
 }
 
-#sec4 .container img:hover #sec4 .container img {
-    transform: scale(1.2);
-}
-
-#sec4 .container li:not(:nth-of-type(4n)) {
-    margin-right: 24px;
+#sec4 img:hover #sec4 img {
+    transform: scale(2);
 }
 
 /* section5 */
 /* footer */
 footer {
     height: 100px;
+    text-align: center;
 }
 
-@media (min-width: 760px) {
+/* 미디어쿼리 */
+/* 태블릿 */
+@media (min-width: 768px) {}
 
+/* 데스크탑 */
+@media (min-width: 1025px) {
+
+    /* header */
+    header {
+        height: 60px;
+    }
+
+    header nav>.main {
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav .main_menu {
+        width: 200px;
+        height: 60px;
+    }
+
+    /* section 공통 */
+    section {
+        padding-top: 60px;
+        height: 100vh;
+    }
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* section1 */
+    #sec1 {
+        display: flex;
+        position: relative;
+    }
+
+    #sec1 div.my_ill {
+        position: absolute;
+        left: 20%;
+        bottom: 32%;
+    }
+
+    #sec1 h1 {
+        position: absolute;
+        left: 32px;
+        bottom: 10%;
+        animation: s1h1 1s;
+    }
+
+    @keyframes s1h1 {
+        0% {
+            left: -100%;
+            opacity: 0;
+        }
+
+        100% {
+            left: 32px;
+            opacity: 1;
+        }
+    }
+
+    /* section2 */
+    #sec2 {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    #sec2 .container {
+        display: flex;
+    }
+
+    /* section3 */
+    /* section4 */
+    #sec4 h2 {
+        width: 1000px;
+        margin: 40px auto 40px;
+    }
+
+    #sec4 .container>ul {
+        width: 1000px;
+        height: 450px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    #sec4 .container ul li {
+        width: 200px;
+        height: 200px;
+        transition: .3s;
+    }
+
+    #sec4 .container img:hover #sec4 .container img {
+        transform: scale(1.2);
+    }
+
+    #sec4 .container li:not(:nth-of-type(4n)) {
+        margin-right: 24px;
+    }
 }
-
-@media (min-width: 1025px) {}

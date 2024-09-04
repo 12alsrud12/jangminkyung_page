@@ -31,6 +31,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 }
             }
         };
-    }
+    };
+
+    // tabs
 
 });
