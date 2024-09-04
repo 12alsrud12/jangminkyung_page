@@ -1,1 +1,27 @@
 @charset "utf-8";
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav>.main {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .main_menu {
+    width: 200px;
+    height: 60px;
+}
+
+section {
+    height: 100vh;
+}
+
+footer {
+    height: 100px;
+}

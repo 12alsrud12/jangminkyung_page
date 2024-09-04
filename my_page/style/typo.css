@@ -1,1 +1,51 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* 공통 */
+h1 {
+    font-size: 13.5em;
+}
+
+h2 {
+    font-size: 7em;
+}
+
+section li {
+    font-size: 1.6em;
+}
+
+section a {
+    font-size: 2.3em;
+}
+
+/* header typo */
+.main_menu>a {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.main_menu {
+    text-align: center;
+    line-height: 60px;
+}
+
+/* footer typo */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    line-height: 2;
+}

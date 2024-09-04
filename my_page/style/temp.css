@@ -3,3 +3,12 @@
 body * {
     border: 1px solid red;
 }
+
+body {
+    background: #fff;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+}
