@@ -1,8 +1,32 @@
 window.addEventListener("DOMContentLoaded", () => {
-    const pScroll = document.querySelector("p#scroll");
-    const header = document.querySelector("header");
 
-    pScroll.window.addEventListener(scroll, () => {
-        pScroll.innerHTML = Math.floor(pageYOffset);
-    });
+    const docEle = document.documentElement;
+    const header = document.querySelector("header");
+    const sec = document.querySelectorAll('.fullscreen');
+    const wh = window.innerHeight;
+
+    for (let i = 0; i < sec.length; i++) {
+        sec[i].onwheel = (e) => {
+            // 기본 이벤트 방지
+            e.preventDefault();
+            if (e.deltaY > 0) {
+                // 마우스휠 내림
+                // e.currentTarget는 이벤트가 발생한 요소
+                if (docEle.scrollTop > wh * (sec.length - 2) + 100) return;
+                let next = e.currentTarget.nextElementSibling.offsetTop;
+                console.log('앗!', wh * (sec.length - 1) - 100, next);
+                docEle.scrollTop = next;
+            } else if (e.deltaY < 0) {
+                // 마우스휠 올림
+                if (docEle.scrollTop < wh) return;
+                let prev = e.currentTarget.previousElementSibling.offsetTop;
+                console.log(prev);
+                docEle.scrollTop = prev;
+            }
+        };
+    }
+
+    window.addEventListener(wh <= 1000, () => {
+        header.classList.toggle("active");
+    })
 });
