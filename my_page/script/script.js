@@ -16,17 +16,21 @@ window.addEventListener("DOMContentLoaded", () => {
                 let next = e.currentTarget.nextElementSibling.offsetTop;
                 console.log('앗!', wh * (sec.length - 1) - 100, next);
                 docEle.scrollTop = next;
+                if (next >= 500) {
+                    header.classList.add("action");
+                }
             } else if (e.deltaY < 0) {
                 // 마우스휠 올림
                 if (docEle.scrollTop < wh) return;
                 let prev = e.currentTarget.previousElementSibling.offsetTop;
                 console.log(prev);
                 docEle.scrollTop = prev;
+                if (prev <= 0) {
+                    header.classList.remove("action");
+                }
             }
+
         };
     }
 
-    window.addEventListener(wh <= 1000, () => {
-        header.classList.toggle("active");
-    })
 });
