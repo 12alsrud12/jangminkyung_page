@@ -87,10 +87,21 @@ header nav .main_menu {
 
 #sec4 .container {
     flex-direction: column;
+    justify-content: center;
+}
+
+#sec4 ul.btn {
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
 }
 
 #sec4 .tabs {
     position: relative;
+    height: 400px;
 }
 
 #sec4 .tab {
@@ -195,18 +206,37 @@ footer {
     #sec4 ul.btn {
         width: 1200px;
         height: 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
     }
 
     #sec4 ul.btn>li {
-        width: 300px;
+        width: 140px;
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    #sec4 .tabs {
+        display: flex;
+        align-items: center;
+        height: 600px;
+    }
+
+    #sec4 .tab.on {
+        display: flex;
+        align-content: space-between;
+    }
+
+    #sec4 .tab-bx1 {
+        width: 330px;
+        height: 330px;
+    }
+
+    #sec4 .tab-bx2 {
+        width: 100%;
+        height: 100%;
     }
 
     /* section5 */

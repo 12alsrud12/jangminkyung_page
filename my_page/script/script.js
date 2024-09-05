@@ -75,53 +75,53 @@ window.addEventListener("DOMContentLoaded", () => {
         tab8.classList.remove("on");
     };
 
-    btn0.onclick(() => {
+    btn0.onclick = () => {
         resetT();
         btn0.classList.add("on");
         tab1.classList.add("on");
-    });
+    };
 
-    btn1.onclick(() => {
+    btn1.onclick = () => {
         resetT();
         btn1.classList.add("on");
         tab2.classList.add("on");
-    });
+    };
 
-    btn2.onclick(() => {
+    btn2.onclick = () => {
         resetT();
         btn2.classList.add("on");
         tab3.classList.add("on");
-    });
+    };
 
-    btn3.onclick(() => {
+    btn3.onclick = () => {
         resetT();
         btn3.classList.add("on");
         tab4.classList.add("on");
-    });
+    };
 
-    btn4.onclick(() => {
+    btn4.onclick = () => {
         resetT();
         btn4.classList.add("on");
         tab5.classList.add("on");
-    });
+    };
 
-    btn5.onclick(() => {
+    btn5.onclick = () => {
         resetT();
         btn5.classList.add("on");
         tab6.classList.add("on");
-    });
+    };
 
-    btn6.onclick(() => {
+    btn6.onclick = () => {
         resetT();
         btn6.classList.add("on");
         tab7.classList.add("on");
-    });
+    };
 
-    btn7.onclick(() => {
+    btn7.onclick = () => {
         resetT();
         btn7.classList.add("on");
         tab8.classList.add("on");
-    });
+    };
 
 
 
