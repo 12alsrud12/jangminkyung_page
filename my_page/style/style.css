@@ -170,9 +170,10 @@ footer {
 
     #sec1 h1 {
         position: absolute;
-        left: 32px;
+        left: 30%;
         bottom: 10%;
         animation: s1h1 1s;
+        text-align: left;
     }
 
     @keyframes s1h1 {
@@ -182,7 +183,7 @@ footer {
         }
 
         100% {
-            left: 32px;
+            left: 30%;
             opacity: 1;
         }
     }
