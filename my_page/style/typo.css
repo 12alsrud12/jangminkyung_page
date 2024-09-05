@@ -27,8 +27,16 @@ section>h2 {
 }
 
 /* header typo */
+header a {
+    color: #fff;
+}
+
+header.action a {
+    color: #272727;
+}
+
 .main_menu>a {
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 700;
 }
 

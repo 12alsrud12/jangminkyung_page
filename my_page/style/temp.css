@@ -4,11 +4,35 @@ body {
     background: #fff;
 }
 
+/* header */
 header {
+    border-top: 1px solid #fff;
+    background: none;
+}
+
+header.action {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(4px);
 }
 
+header li {
+    transition: .3s;
+}
+
+header li:hover {
+    text-shadow: 0 0 4px #fff;
+}
+
+header.action li:hover {
+    background: rgba(39, 39, 39, 0.5);
+}
+
+header.action li:hover header.action li a {
+    color: #fff;
+    text-shadow: 0 0 4px #fff;
+}
+
+/* section */
 #sec1 h1 {
     color: #fff;
     text-shadow: 0 0 4px #fff;

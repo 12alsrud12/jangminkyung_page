@@ -16,18 +16,23 @@ header {
     bottom: 0;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+}
+
 header.action {
     top: 0;
     z-index: 9999;
 }
 
 header nav>.main {
-    width: 50px;
-    padding: 0 16px;
     display: flex;
+    justify-content: center;
 }
 
 header nav .main_menu {
+    width: 70px;
     height: 40px;
 }
 
@@ -43,6 +48,7 @@ header nav .main_menu {
     display: flex;
     position: relative;
     background: url(../../assets/index/sec1/sec1.jpg) 50% 50%/cover fixed;
+    height: 100vh;
 }
 
 #sec1 div.my_ill {
@@ -53,9 +59,11 @@ header nav .main_menu {
 
 #sec1 h1 {
     position: absolute;
-    left: 32px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 10%;
     animation: s1h1 1s;
+    text-align: center;
 }
 
 @keyframes s1h1 {
@@ -77,22 +85,21 @@ header nav .main_menu {
     margin: 40px auto 40px;
 }
 
-#sec4 .container>ul {
-    display: flex;
+#sec4 .container {
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
 }
 
-#sec4 .container ul li {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 16px;
+#sec4 .tabs {
+    position: relative;
 }
 
-#sec4 img:hover #sec4 img {
-    transform: scale(2);
+#sec4 .tab {
+    position: absolute;
+    display: none;
+}
+
+#sec4 .tab.on {
+    display: block;
 }
 
 /* section5 */
@@ -181,31 +188,26 @@ footer {
 
     /* section3 */
     /* section4 */
-    #sec4 h2 {
-        width: 1000px;
-        margin: 40px auto 40px;
+    #sec4>h2 {
+        text-align: center;
     }
 
-    #sec4 .container>ul {
-        width: 1000px;
-        height: 450px;
-        flex-wrap: wrap;
-        flex-direction: row;
+    #sec4 ul.btn {
+        width: 1200px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #sec4 ul.btn>li {
+        width: 300px;
+        height: 60px;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        align-content: space-between;
+        text-align: center;
     }
 
-    #sec4 .container ul li {
-        width: 200px;
-        height: 200px;
-        transition: .3s;
-    }
-
-    #sec4 .container img:hover #sec4 .container img {
-        transform: scale(1.2);
-    }
-
-    #sec4 .container li:not(:nth-of-type(4n)) {
-        margin-right: 24px;
-    }
+    /* section5 */
 }
