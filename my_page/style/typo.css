@@ -45,6 +45,18 @@ header.action a {
     line-height: 40px;
 }
 
+/* section1 */
+#s1_tx1 {
+    font-size: 2vw;
+    color: #fff;
+    text-shadow: 0 0 4px #fff;
+}
+
+/* section2 */
+/* section3 */
+/* section4 */
+/* section5 */
+
 /* footer typo */
 footer {
     display: flex;
@@ -57,7 +69,11 @@ footer {
 }
 
 /* 테블릿 */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .main_menu>a {
+        font-size: 2.5vw;
+    }
+}
 
 /* 데스크탑 */
 @media (min-width: 1025px) {

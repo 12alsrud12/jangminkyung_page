@@ -7,11 +7,10 @@ body {
 /* header */
 header {
     border-top: 1px solid #fff;
-    background: none;
+    background: rgba(255, 255, 255, 0.25);
 }
 
 header.action {
-    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(4px);
 }
 
@@ -33,6 +32,7 @@ header.action li:hover header.action li a {
 }
 
 /* section */
+
 #sec1 h1 {
     color: #fff;
     text-shadow: 0 0 4px #fff;

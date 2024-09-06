@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-body * {
+/* body * {
     border: 1px solid red;
-}
+} */
 
 /* header */
 header {
@@ -24,6 +24,7 @@ nav {
 header.action {
     top: 0;
     z-index: 9999;
+    box-shadow: 0 4px 4px rgba(196, 212, 255, 0.5);
 }
 
 header nav>.main {
@@ -51,29 +52,23 @@ header nav .main_menu {
     height: 100vh;
 }
 
-#sec1 div.my_ill {
-    position: absolute;
-    left: 20%;
-    bottom: 32%;
-}
-
 #sec1 h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 10%;
-    animation: s1h1 1s;
+    animation: s1h1 1.5s;
     text-align: center;
 }
 
 @keyframes s1h1 {
     0% {
-        left: -100%;
+        bottom: -10%;
         opacity: 0;
     }
 
     100% {
-        left: 32px;
+        bottom: 10%;
         opacity: 1;
     }
 }
@@ -81,37 +76,7 @@ header nav .main_menu {
 /* section2 */
 /* section3 */
 /* section4 */
-#sec4 h2 {
-    margin: 40px auto 40px;
-}
 
-#sec4 .container {
-    flex-direction: column;
-    justify-content: center;
-}
-
-#sec4 ul.btn {
-    width: 100%;
-    padding: 0 16px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-}
-
-#sec4 .tabs {
-    position: relative;
-    height: 400px;
-}
-
-#sec4 .tab {
-    position: absolute;
-    display: none;
-}
-
-#sec4 .tab.on {
-    display: block;
-}
 
 /* section5 */
 /* footer */
@@ -122,7 +87,23 @@ footer {
 
 /* 미디어쿼리 */
 /* 태블릿 */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav .main {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+    }
+
+    header nav .main_menu {
+        width: auto;
+        padding: 0 16px;
+    }
+}
 
 /* 데스크탑 */
 @media (min-width: 1025px) {
@@ -132,15 +113,16 @@ footer {
         height: 60px;
     }
 
-    header nav>.main {
-        width: 1000px;
-        display: flex;
+    header nav .main {
+        width: 1200px;
         justify-content: space-between;
+        align-items: center;
     }
 
     header nav .main_menu {
         width: 200px;
         height: 60px;
+        padding: 0;
     }
 
     /* section 공통 */
@@ -189,56 +171,10 @@ footer {
     }
 
     /* section2 */
-    #sec2 {
-        width: 1200px;
-        margin: 0 auto;
-    }
-
-    #sec2 .container {
-        display: flex;
-    }
 
     /* section3 */
     /* section4 */
-    #sec4>h2 {
-        text-align: center;
-    }
 
-    #sec4 ul.btn {
-        width: 1200px;
-        height: 60px;
-        justify-content: center;
-    }
-
-    #sec4 ul.btn>li {
-        width: 140px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #sec4 .tabs {
-        display: flex;
-        align-items: center;
-        height: 600px;
-    }
-
-    #sec4 .tab.on {
-        display: flex;
-        align-content: space-between;
-    }
-
-    #sec4 .tab-bx1 {
-        width: 330px;
-        height: 330px;
-    }
-
-    #sec4 .tab-bx2 {
-        width: 100%;
-        height: 100%;
-    }
 
     /* section5 */
 }
