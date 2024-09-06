@@ -38,7 +38,11 @@ header.action li:hover header.action li a {
 #my-bg {
     width: 700px;
     height: 570px;
-    background: #006F94;
+    background: var(--color6);
+}
+
+#sec2-btn li.on>a {
+    background: var(--color6);
 }
 
 /* sec3 */

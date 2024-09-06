@@ -74,6 +74,11 @@ header.action a {
     line-height: 2;
 }
 
+/* sec2-tabs */
+#sec2-btn li.on>a {
+    color: var(--white);
+}
+
 /* section3 */
 /* section4 */
 /* section5 */

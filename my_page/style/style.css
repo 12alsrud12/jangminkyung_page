@@ -39,12 +39,11 @@ header nav .main_menu {
 
 /* section 공통 */
 .container {
-    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
-/* section1 */
+/* MB section1 */
 #sec1 {
     display: flex;
     position: relative;
@@ -73,7 +72,7 @@ header nav .main_menu {
     }
 }
 
-/* sec1 sub text */
+/* MB sec1 sub text */
 #s1_box {
     width: 100%;
     display: flex;
@@ -81,7 +80,13 @@ header nav .main_menu {
     margin-top: 24px;
 }
 
-/* section2 */
+/* MB section2 */
+#s2_bx1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MB About me */
 .my_profile {
     position: relative;
     width: 220px;
@@ -107,12 +112,31 @@ header nav .main_menu {
     transform: translateX(-50%);
 }
 
-/* section3 */
-/* section4 */
+/* MB sec2_tabs */
+#sec2-tabs {
+    width: 100%;
+}
+
+#sec2-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#sec2-btn li {
+    padding: 0 16px;
+}
+
+#sec2-btn li.on>a {
+    padding: 8px 24px;
+    border-radius: 5%;
+}
+
+/* MB section3 */
+/* MB section4 */
 
 
-/* section5 */
-/* footer */
+/* MB section5 */
+/* MB footer */
 footer {
     height: 100px;
     text-align: center;
@@ -121,6 +145,8 @@ footer {
 /* 미디어쿼리 */
 /* 태블릿 */
 @media (min-width: 768px) {
+
+    /* TB header */
     header {
         justify-content: center;
         align-items: center;
@@ -137,8 +163,12 @@ footer {
         padding: 0 16px;
     }
 
-    /* sec1 */
-    /* sec2 */
+    /* TB sec1 */
+    /* TB sec2 */
+    .my_profile {
+        width: 330px;
+    }
+
     #my-bg {
         width: 330px;
         height: 270px;
@@ -149,16 +179,22 @@ footer {
         left: 10%;
     }
 
-    /* sec3 */
-    /* sec4 */
-    /* sec5 */
-    /* footer */
+    .my_profile>button {
+        left: 20%;
+    }
+
+    /* TB sec3 */
+    /* TB sec4 */
+    /* TB sec5 */
+    /* TB footer */
 }
+
+/* // ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ TB -end */
 
 /* 데스크탑 */
 @media (min-width: 1025px) {
 
-    /* header */
+    /* PC header */
     header {
         height: 60px;
     }
@@ -175,7 +211,7 @@ footer {
         padding: 0;
     }
 
-    /* section 공통 */
+    /* PC section 공통 */
     section {
         padding-top: 60px;
         height: 100vh;
@@ -188,7 +224,7 @@ footer {
         justify-content: center;
     }
 
-    /* section1 */
+    /* PC section1 */
     #sec1 {
         display: flex;
         position: relative;
@@ -220,7 +256,7 @@ footer {
         }
     }
 
-    /* sec1 sub text */
+    /* PC sec1 sub text */
     #s1_box {
         justify-content: flex-start;
     }
@@ -229,7 +265,11 @@ footer {
         margin-left: 24px;
     }
 
-    /* section2 */
+    /* PC section2 */
+    .my_profile {
+        width: 700px;
+    }
+
     #my-bg {
         width: 700px;
         height: 570px;
@@ -241,9 +281,21 @@ footer {
         right: -10%;
     }
 
-    /* section3 */
-    /* section4 */
+    .my_profile>button {
+        left: auto;
+        right: 0;
+    }
+
+    #sec2-btn {
+        justify-content: flex-end;
+    }
 
 
-    /* section5 */
+    /* PC section3 */
+    /* PC section4 */
+
+
+    /* PC section5 */
 }
+
+/* //ㅡㅡㅡㅡ PC end */
