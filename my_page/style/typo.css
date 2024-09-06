@@ -46,10 +46,17 @@ header.action a {
 }
 
 /* section1 */
-#s1_tx1 {
-    font-size: 2vw;
+#sec1 h1 {
     color: #fff;
     text-shadow: 0 0 4px #fff;
+    letter-spacing: 16px;
+}
+
+#s1_tx1 {
+    font-size: 1vw;
+    color: #fff;
+    text-shadow: 0 0 4px #fff;
+    letter-spacing: 16px;
 }
 
 /* section2 */

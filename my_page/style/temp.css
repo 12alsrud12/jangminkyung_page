@@ -33,11 +33,7 @@ header.action li:hover header.action li a {
 
 /* section */
 
-#sec1 h1 {
-    color: #fff;
-    text-shadow: 0 0 4px #fff;
-    letter-spacing: 16px;
-}
+
 
 footer {
     background: #272727;
