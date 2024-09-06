@@ -19,6 +19,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 // 스크롤이벤트 (휠 내렸을 시)
                 if (next >= 500) {
                     header.classList.add("action");
+                } else if (next = 0) {
+                    header.classList.remove("action");
                 }
 
             } else if (e.deltaY < 0) {

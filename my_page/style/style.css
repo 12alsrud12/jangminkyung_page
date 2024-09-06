@@ -73,7 +73,40 @@ header nav .main_menu {
     }
 }
 
+/* sec1 sub text */
+#s1_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
 /* section2 */
+.my_profile {
+    position: relative;
+    width: 220px;
+}
+
+#my-bg {
+    position: relative;
+    width: 220px;
+    height: 170px;
+}
+
+#my-img {
+    position: absolute;
+    width: 30vw;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.my_profile>button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* section3 */
 /* section4 */
 
@@ -103,6 +136,23 @@ footer {
         width: auto;
         padding: 0 16px;
     }
+
+    /* sec1 */
+    /* sec2 */
+    #my-bg {
+        width: 330px;
+        height: 270px;
+    }
+
+    #my-img {
+        width: 25vw;
+        left: 10%;
+    }
+
+    /* sec3 */
+    /* sec4 */
+    /* sec5 */
+    /* footer */
 }
 
 /* 데스크탑 */
@@ -170,7 +220,26 @@ footer {
         }
     }
 
+    /* sec1 sub text */
+    #s1_box {
+        justify-content: flex-start;
+    }
+
+    #s1_tx1 {
+        margin-left: 24px;
+    }
+
     /* section2 */
+    #my-bg {
+        width: 700px;
+        height: 570px;
+    }
+
+    #my-img {
+        width: 20vw;
+        left: auto;
+        right: -10%;
+    }
 
     /* section3 */
     /* section4 */

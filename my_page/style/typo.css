@@ -53,13 +53,27 @@ header.action a {
 }
 
 #s1_tx1 {
-    font-size: 1vw;
+    font-size: 2vw;
     color: #fff;
     text-shadow: 0 0 4px #fff;
     letter-spacing: 16px;
 }
 
 /* section2 */
+/* sec2 tabs */
+#sec2-btn a {
+    font-size: 2vw;
+}
+
+/* sec2 my */
+
+.my_profile>button {
+    color: #006F94;
+    font-weight: 700;
+    transform: rotate(270deg);
+    line-height: 2;
+}
+
 /* section3 */
 /* section4 */
 /* section5 */
@@ -107,6 +121,20 @@ footer {
 
     .main_menu {
         line-height: 60px;
+    }
+
+    /* sec1 */
+    #s1_tx1 {
+        font-size: 1vw;
+        letter-spacing: 16px;
+    }
+
+    /* sec2 */
+    /* sec2 tabs */
+    #sec2-btn a {
+        font-size: 1vw;
+        font-weight: 700;
+        letter-spacing: 2px;
     }
 
     /* footer typo */
