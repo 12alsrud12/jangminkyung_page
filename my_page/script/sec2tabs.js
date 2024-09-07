@@ -11,4 +11,16 @@ window.addEventListener("DOMContentLoaded", () => {
         tab1.classList.remove("on");
         tab2.classList.remove("on");
     };
+
+    btn1.onclick() = () => {
+        resetT2();
+        btn1.classList.add("on");
+        tab1.classList.add("on");
+    };
+
+    btn2.onclick() = () => {
+        resetT2();
+        btn2.classList.add("on");
+        tab2.classList.add("on");
+    };
 });

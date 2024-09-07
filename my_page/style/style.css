@@ -142,6 +142,16 @@ header nav .main_menu {
     border-radius: 5%;
 }
 
+#tab1,
+#tab2 {
+    display: none;
+}
+
+#tab1.on,
+#tab2.on {
+    display: block;
+}
+
 /* MB section3 */
 /* MB section4 */
 
