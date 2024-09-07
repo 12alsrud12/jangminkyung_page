@@ -121,10 +121,13 @@ header nav .main_menu {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 /* MB sec2_tabs */
 #sec2-tabs {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -135,11 +138,12 @@ header nav .main_menu {
 }
 
 #sec2-btn li {
-    padding: 0 16px;
+    padding: 8px 24px;
+    cursor: pointer;
+    margin-left: 16px;
 }
 
 #sec2-btn li.on {
-    padding: 8px 24px;
     border-radius: 5%;
 }
 
@@ -150,7 +154,9 @@ header nav .main_menu {
 
 #tab1.on,
 #tab2.on {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 0 10%;
 }
 
 /* MB section3 */
@@ -288,6 +294,11 @@ footer {
     }
 
     /* PC section2 */
+    #sec2>h2 {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
     .my_profile {
         width: 700px;
     }
@@ -305,7 +316,17 @@ footer {
 
     .my_profile>button {
         left: auto;
-        right: 0;
+        right: -15%;
+    }
+
+    /* MB sec2_tabs */
+    #sec2-tabs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #sec2-btn {
+        margin-right: 24px;
     }
 
     #sec2-btn {

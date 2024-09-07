@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-size: 10vw;
+    font-size: 7vw;
 }
 
 section>h2 {
@@ -71,9 +71,12 @@ header.action a {
 }
 
 /* section2 */
+#sec2>h2 {
+    line-height: 3;
+}
 /* sec2 tabs */
 #sec2-btn li {
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 /* sec2 my */
@@ -114,6 +117,12 @@ footer {
 
 /* 데스크탑 */
 @media (min-width: 1025px) {
+
+    /* 공통 */
+    h1 {
+        font-size: 10vw;
+    }
+
     h2 {
         font-size: 7em;
     }
@@ -146,8 +155,11 @@ footer {
     }
 
     /* sec2 */
+    .my_profile>button {
+        font-size: 2vw;
+    }
     /* sec2 tabs */
-    #sec2-btn a {
+    #sec2-btn li {
         font-size: 1vw;
         font-weight: 700;
         letter-spacing: 2px;
