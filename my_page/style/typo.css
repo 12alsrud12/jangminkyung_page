@@ -64,19 +64,16 @@ header.action a {
 }
 
 #s1_tx1 {
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: #fff;
     text-shadow: 0 0 4px #fff;
-    letter-spacing: 16px;
+    letter-spacing: 10px;
 }
 
 /* section2 */
 #sec2>h2 {
     line-height: 3;
-}
-/* sec2 tabs */
-#sec2-btn li {
-    font-size: 2vw;
+    color: var(--color6);
 }
 
 /* sec2 my */
@@ -89,9 +86,9 @@ header.action a {
 }
 
 /* sec2-tabs */
-#sec2-btn li.on {
-    color: var(--white);
-}
+
+
+
 
 /* section3 */
 /* section4 */
@@ -112,6 +109,23 @@ footer {
 @media (min-width: 768px) {
     .main_menu>a {
         font-size: 2.5vw;
+    }
+
+    #s1_tx1 {
+        letter-spacing: 16px;
+    }
+
+    #tab1 p {
+        font-size: 1.6vw;
+        line-height: 1.5;
+    }
+
+    .my_profile>button {
+        font-size: 3vw;
+    }
+
+    #sec2_sub_tit {
+        font-size: 1.5vw;
     }
 }
 
@@ -151,19 +165,33 @@ footer {
     /* sec1 */
     #s1_tx1 {
         font-size: 1vw;
-        letter-spacing: 16px;
     }
 
     /* sec2 */
+    #sec2>h2 {
+        line-height: 1.5;
+    }
+
     .my_profile>button {
         font-size: 2vw;
     }
+
     /* sec2 tabs */
     #sec2-btn li {
         font-size: 1vw;
         font-weight: 700;
         letter-spacing: 2px;
     }
+
+    #tab1 p {
+        font-size: 1vw;
+        line-height: 2;
+    }
+
+    #sec2_sub_tit {
+        font-size: 1vw;
+    }
+
 
     /* footer typo */
     footer {

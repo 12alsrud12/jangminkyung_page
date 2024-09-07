@@ -51,7 +51,15 @@ header nav .main_menu {
 /* section 공통 */
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+#sec5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
 }
 
 /* MB section1 */
@@ -92,8 +100,17 @@ header nav .main_menu {
 }
 
 /* MB section2 */
+#sec2 {
+    height: 70vh;
+}
+
+#sec2>h2 {
+    margin-top: 60px;
+}
+
 #s2_bx1 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -101,6 +118,7 @@ header nav .main_menu {
 .my_profile {
     position: relative;
     width: 220px;
+    margin: 0 auto;
 }
 
 #my-bg {
@@ -126,37 +144,33 @@ header nav .main_menu {
 
 /* MB sec2_tabs */
 #sec2-tabs {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-#sec2-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#sec2-btn li {
-    padding: 8px 24px;
-    cursor: pointer;
-    margin-left: 16px;
-}
-
-#sec2-btn li.on {
-    border-radius: 5%;
-}
-
-#tab1,
-#tab2 {
-    display: none;
-}
-
-#tab1.on,
-#tab2.on {
+#tab1 {
     display: flex;
     flex-direction: column;
-    margin: 5% 0 0 10%;
+    padding: 0 24px;
+    margin: 5% auto 0;
+    height: 250px;
+}
+
+#tab1 p {
+    margin: 8px 0;
+}
+
+#sec2_sub_tit {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+#sec2_sub_tit li {
+    margin: 0 8px;
 }
 
 /* MB section3 */
@@ -164,6 +178,11 @@ header nav .main_menu {
 
 
 /* MB section5 */
+#sec5>.container {
+    width: 100%;
+    height: 50vh;
+}
+
 /* MB footer */
 footer {
     height: 100px;
@@ -193,6 +212,10 @@ footer {
 
     /* TB sec1 */
     /* TB sec2 */
+    #sec2 {
+        height: 50vh;
+    }
+
     .my_profile {
         width: 330px;
     }
@@ -208,7 +231,25 @@ footer {
     }
 
     .my_profile>button {
-        left: 20%;
+        left: 50%;
+    }
+
+    #s2_bx1 {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #tab1 {
+        height: 200px;
+        margin: 5% 0 0 0;
+    }
+
+    #sec2_sub_tit {
+        bottom: -5%;
+    }
+
+    #sec2_sub_tit li {
+        margin-right: 16px;
     }
 
     /* TB sec3 */
@@ -294,6 +335,10 @@ footer {
     }
 
     /* PC section2 */
+    #sec2 {
+        height: 100vh;
+    }
+
     #sec2>h2 {
         width: 1200px;
         margin: 0 auto;
@@ -320,19 +365,23 @@ footer {
     }
 
     /* MB sec2_tabs */
+
     #sec2-tabs {
         flex-direction: column;
         width: 100%;
     }
 
-    #sec2-btn {
-        margin-right: 24px;
+    #tab1 {
+        margin-left: 100px;
     }
 
-    #sec2-btn {
-        justify-content: flex-end;
+    #tab1 p {
+        margin: 0;
     }
 
+    #tab1 p:last-of-type {
+        margin-top: 24px;
+    }
 
     /* PC section3 */
     /* PC section4 */

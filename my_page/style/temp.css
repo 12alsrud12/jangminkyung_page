@@ -54,6 +54,10 @@ header.action li:hover {
 /* sec3 */
 /* sec4 */
 /* sec5 */
+#sec5>.container {
+    background: url(../../assets/index/sec5/sec5-bg.jpg) 50% 50%/cover fixed;
+}
+
 /* footer */
 footer {
     background: var(--color6);
