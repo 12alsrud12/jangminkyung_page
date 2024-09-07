@@ -72,8 +72,8 @@ header.action a {
 
 /* section2 */
 /* sec2 tabs */
-#sec2-btn a {
-    font-size: 2vw;
+#sec2-btn li {
+    font-size: 1vw;
 }
 
 /* sec2 my */
@@ -86,7 +86,7 @@ header.action a {
 }
 
 /* sec2-tabs */
-#sec2-btn li.on>a {
+#sec2-btn li.on {
     color: var(--white);
 }
 

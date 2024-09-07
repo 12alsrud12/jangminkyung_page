@@ -131,13 +131,14 @@ header nav .main_menu {
 #sec2-btn {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #sec2-btn li {
     padding: 0 16px;
 }
 
-#sec2-btn li.on>a {
+#sec2-btn li.on {
     padding: 8px 24px;
     border-radius: 5%;
 }

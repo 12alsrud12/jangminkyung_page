@@ -47,7 +47,7 @@ header.action li:hover {
     background: var(--color6);
 }
 
-#sec2-btn li.on>a {
+#sec2-btn li.on {
     background: var(--color6);
 }
 
