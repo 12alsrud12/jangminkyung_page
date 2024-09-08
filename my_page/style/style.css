@@ -104,7 +104,7 @@ header nav .main_menu {
     height: 70vh;
 }
 
-#sec2>h2 {
+section>h2 {
     margin-top: 60px;
 }
 
@@ -339,7 +339,7 @@ footer {
         height: 100vh;
     }
 
-    #sec2>h2 {
+    section>h2 {
         width: 1200px;
         margin: 0 auto;
     }
