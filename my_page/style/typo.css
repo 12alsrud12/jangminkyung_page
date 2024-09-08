@@ -30,6 +30,8 @@ h1 {
 
 h2 {
     font-size: 7vw;
+    color: #272727;
+    letter-spacing: 4px;
 }
 
 section>h2 {
@@ -73,7 +75,6 @@ header.action a {
 /* section2 */
 #sec2>h2 {
     line-height: 3;
-    color: var(--color6);
 }
 
 /* sec2 my */
@@ -85,14 +86,44 @@ header.action a {
     line-height: 2;
 }
 
-/* sec2-tabs */
-
-
-
-
 /* section3 */
+#skill p {
+    font-size: 4vw;
+    line-height: 1.5;
+}
+
+#skill div {
+    color: var(--color6);
+    font-size: 4vw;
+    line-height: 2;
+}
+
 /* section4 */
+#sec4 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sec4 li {
+    width: 200px;
+    height: 200px;
+    margin: 8px 0;
+}
+
+#s4-bx p {
+    line-height: 2;
+    text-align: center;
+}
+
 /* section5 */
+#s5-bx1>p {
+    font-size: 2vw;
+    text-align: center;
+    text-shadow: 0 0 4px #fff;
+    color: var(--white);
+    line-height: 2;
+}
 
 /* footer typo */
 footer {
@@ -127,6 +158,43 @@ footer {
     #sec2_sub_tit {
         font-size: 1.5vw;
     }
+
+    #skill p {
+        font-size: 3vw;
+        letter-spacing: 14px;
+
+    }
+
+    #skill div {
+        font-size: 3vw;
+    }
+
+    /* sec4 */
+    #sec4 .container {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    #sec4 ul {
+        margin-top: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #sec4 li {
+        width: 150px;
+        height: 150px;
+    }
+
+    #s4-bx p {
+        font-size: 2vw;
+    }
+
+
+
+    /* sec5 */
+
 }
 
 /* 데스크탑 */
@@ -192,6 +260,27 @@ footer {
         font-size: 1vw;
     }
 
+    /* sec3 */
+    #skill p {
+        font-size: 1.5vw;
+        line-height: 2;
+    }
+
+    #skill div {
+        font-size: 1.5vw;
+        line-height: 2;
+    }
+
+    /* sec4 */
+    #s4-bx p {
+        font-size: 0.7vw;
+        line-height: 2;
+    }
+
+    /* sec5 */
+    #s5-bx1>p {
+        font-size: 1vw;
+    }
 
     /* footer typo */
     footer {

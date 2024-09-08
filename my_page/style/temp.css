@@ -58,6 +58,10 @@ header.action li:hover {
     background: url(../../assets/index/sec5/sec5-bg.jpg) 50% 50%/cover fixed;
 }
 
+#s5-bx1 {
+    background: rgba(0, 111, 148, 0.7);
+}
+
 /* footer */
 footer {
     background: var(--color6);
