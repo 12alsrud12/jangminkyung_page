@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
         pppp.innerHTML = Math.floor(pageYOffset);
 
         // header scroll event
-        if (pppp.innerHTML >= 900) {
+        if (pppp.innerHTML >= 100) {
             header.classList.add("action");
         } else {
             header.classList.remove("action");
@@ -17,8 +17,6 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     // sec4 tab 요소찾기
-    const s4Btn = document.querySelector("#s4-btn>li");
-    const s4tab = document.querySelector("#s4-main-tab>li");
     const s4Btn0 = document.querySelectorAll("#s4-btn>li")[0];
     const s4Btn1 = document.querySelectorAll("#s4-btn>li")[1];
     const s4Btn2 = document.querySelectorAll("#s4-btn>li")[2];
