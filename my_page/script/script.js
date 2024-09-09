@@ -85,11 +85,41 @@ window.addEventListener("DOMContentLoaded", () => {
     };
 
     // modal popup
-    const poOpen1 = document.querySelector("#s4-tab1");
-    const poOpen2 = document.querySelector("#s4-tab2");
-    const poOpen3 = document.querySelector("#s4-tab3");
-    const poOpen4 = document.querySelector("#s4-tab4");
-    const poOpen5 = document.querySelector("#s4-tab5");
-    const poOpen6 = document.querySelector("#s4-tab6");
+    const poOpen1 = document.querySelector("#tab1-ppt");
+    const poOpen2 = document.querySelector("#tab2-ppt");
+    const poOpen3 = document.querySelector("#tab3-ppt");
+    const poOpen4 = document.querySelector("#tab4-ppt");
+    const poOpen5 = document.querySelector("#tab5-ppt");
+    const poOpen6 = document.querySelector("#tab6-ppt");
+
+    // 팝업 컨텐츠 요소찾기
+    const popcont = document.querySelector("#popcont");
+    const modal = document.querySelector("#modal");
+    const popup = document.querySelector("#popup");
+    const popupBtn = document.querySelector("button#exit");
+
+    popupBtn.onclick = () => {
+        modal.classList.remove("on");
+    };
+
+    poOpen1.onclick = () => {
+        popcont.innerHTML = '<img src="assets/index/sec4/jin_air_modal.png" alt="팝업1">';
+        modal.classList.add("on");
+    };
+
+    poOpen2.onclick = () => {
+        popcont.innerHTML = '<img src="assets/index/sec4/sulbing_modal.png" alt="팝업2">';
+        modal.classList.add("on");
+    };
+
+    // 3,4 는 이미지 준비 X
+    poOpen5.onclick = () => {
+        popcont.innerHTML = '<img src="assets/index/sec4/tnj_modal.png" alt="팝업5">';
+        modal.classList.add("on");
+    };
+    poOpen6.onclick = () => {
+        popcont.innerHTML = '<img src="assets/index/sec4/Judymary_modal.png" alt="팝업5">';
+        modal.classList.add("on");
+    };
 
 });

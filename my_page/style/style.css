@@ -287,6 +287,7 @@ section>h2 {
     width: 100vw;
     height: 100vh;
     position: fixed;
+    z-index: 9999;
     top: 0;
     display: none;
     background: rgba(0, 111, 148, 0.5);
@@ -302,12 +303,17 @@ section>h2 {
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 9999;
     transform: translate(-50%, -50%);
     overflow: scroll;
 }
 
 button#exit {
-
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    font-size: 50px;
+    color: #fff;
 }
 
 /* MB section5 */
@@ -426,6 +432,11 @@ footer {
     #popup {
         width: 500px;
         height: 700px;
+    }
+
+    button#exit {
+        top: 10%;
+        left: 17%;
     }
 
     /* TB sec5 */
@@ -639,6 +650,11 @@ footer {
         height: 500px;
     }
 
+    button#exit {
+        left: 30%;
+        top: 15%;
+        font-size: 50px;
+    }
     /* PC section5 */
 
 }
