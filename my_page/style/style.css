@@ -287,6 +287,7 @@ section>h2 {
     width: 100vw;
     height: 100vh;
     position: fixed;
+    top: 0;
     display: none;
     background: rgba(0, 111, 148, 0.5);
 }
@@ -303,6 +304,10 @@ section>h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: scroll;
+}
+
+button#exit {
+
 }
 
 /* MB section5 */
@@ -630,7 +635,7 @@ footer {
 
     /* s4 popup */
     #popup {
-        width: 1400px;
+        width: 800px;
         height: 500px;
     }
 
