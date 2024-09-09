@@ -282,6 +282,22 @@ section>h2 {
     margin-top: 24px;
 }
 
+/* popup */
+#modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    background: rgba(0, 111, 148, 0.5);
+}
+
+#modal.on {
+    display: block;
+}
+
+#popup {
+}
+
 /* MB section5 */
 #sec5>.container {
     position: relative;
