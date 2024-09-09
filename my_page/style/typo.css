@@ -103,6 +103,10 @@ header.action a {
     font-size: 3vw;
 }
 
+#s4-btn>li.on {
+    color: var(--white);
+}
+
 .tab h3 {
     text-align: center;
     font-size: 4vw;

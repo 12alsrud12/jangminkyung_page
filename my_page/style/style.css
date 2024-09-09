@@ -506,6 +506,14 @@ footer {
         margin: 0 24px;
     }
 
+    #s4-btn>li.on {
+        background: var(--color6);
+    }
+
+    #s4-btn>li::after {
+        background: none;
+    }
+
     #s4-btn li>span.s4 {
         display: inline-block;
     }
