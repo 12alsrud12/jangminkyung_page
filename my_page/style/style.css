@@ -199,8 +199,23 @@ section>h2 {
 }
 
 /* MB section4 */
-#s4-bx {
-    padding: 16px;
+#sec4 .container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s4-sub1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s4-sub1>a,
+.s4-sub1>button {
+    border: 1px solid var(--color6);
+    border-radius: 5px;
 }
 
 /* MB section5 */

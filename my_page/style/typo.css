@@ -116,6 +116,11 @@ header.action a {
     text-align: center;
 }
 
+.s4-sub1>a,
+.s4-sub1>button {
+    font-size: 5vw;
+}
+
 /* section5 */
 #s5-bx1>p {
     font-size: 2vw;
@@ -275,6 +280,11 @@ footer {
     #s4-bx p {
         font-size: 0.7vw;
         line-height: 2;
+    }
+
+    .s4-sub1>a,
+    .s4-sub1>button {
+        font-size: 1vw;
     }
 
     /* sec5 */
