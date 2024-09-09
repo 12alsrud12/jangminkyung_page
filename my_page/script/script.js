@@ -85,5 +85,11 @@ window.addEventListener("DOMContentLoaded", () => {
     };
 
     // modal popup
+    const poOpen1 = document.querySelector("#s4-tab1");
+    const poOpen2 = document.querySelector("#s4-tab2");
+    const poOpen3 = document.querySelector("#s4-tab3");
+    const poOpen4 = document.querySelector("#s4-tab4");
+    const poOpen5 = document.querySelector("#s4-tab5");
+    const poOpen6 = document.querySelector("#s4-tab6");
 
 });

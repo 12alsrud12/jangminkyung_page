@@ -296,6 +296,13 @@ section>h2 {
 }
 
 #popup {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
 }
 
 /* MB section5 */
@@ -408,6 +415,12 @@ footer {
     .s4-tx>p {
         padding: 0 8px;
         margin: 16px 0;
+    }
+
+    /* s4 popup */
+    #popup {
+        width: 500px;
+        height: 700px;
     }
 
     /* TB sec5 */
@@ -613,6 +626,12 @@ footer {
     .s4-tx-btn button {
         margin: 0;
         margin-right: 16px;
+    }
+
+    /* s4 popup */
+    #popup {
+        width: 1400px;
+        height: 500px;
     }
 
     /* PC section5 */
