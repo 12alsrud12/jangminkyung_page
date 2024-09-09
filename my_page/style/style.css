@@ -203,11 +203,8 @@ section>h2 {
 }
 
 /* MB section4 */
-#sec4 * {
-    /* border: 1px solid red; */
-}
-
 #s4-tabs {
+    height: 600px;
     padding: 0 8px;
 }
 
@@ -217,13 +214,40 @@ section>h2 {
     justify-content: center;
 }
 
+#s4-btn>li>span {
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+#s4-btn>li.on>span {
+    background: var(--color6);
+}
+
+
 #s4-btn>li:not(:last-child)::after {
     content: "|";
     margin: 0 8px;
 }
 
-#s4-btn li>span {
+#s4-btn li span.s4 {
     display: none;
+}
+
+/* main tab 시작 */
+#s4-main-tab {
+    margin-top: 24px;
+    position: relative;
+}
+
+.tab {
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+
+.tab.on {
+    display: block;
+    opacity: 1;
 }
 
 .s4-tx-btn {
@@ -336,6 +360,14 @@ footer {
     }
 
     /* TB sec4 */
+    #s4-main-tab {
+        margin-top: 40px;
+    }
+
+    #s4-tabs {
+        height: 1000px;
+    }
+
     .s4-tx-btn button {
         padding: 8px 16px;
         margin: 0 24px;
@@ -506,20 +538,21 @@ footer {
         margin: 0 24px;
     }
 
-    #s4-btn>li.on {
-        background: var(--color6);
-    }
 
-    #s4-btn>li::after {
-        background: none;
-    }
-
-    #s4-btn li>span.s4 {
+    #s4-btn li span.s4 {
         display: inline-block;
     }
 
     /* PC S4-TAB */
+    #s4-main-tab {
+        margin-top: 16px;
+    }
+
     .tab {
+        display: none;
+    }
+
+    .tab.on {
         padding: 0;
         display: flex;
         justify-content: space-between;
@@ -541,10 +574,13 @@ footer {
         justify-content: space-between;
     }
 
-
+    .s4-tx-btn {
+        justify-content: flex-start;
+    }
 
     .s4-tx-btn button {
         margin: 0;
+        margin-right: 16px;
     }
 
     /* PC section5 */

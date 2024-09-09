@@ -103,7 +103,7 @@ header.action a {
     font-size: 3vw;
 }
 
-#s4-btn>li.on {
+#s4-btn>li.on>span {
     color: var(--white);
 }
 
@@ -269,9 +269,13 @@ footer {
         font-size: 1vw;
     }
 
-    #s4-btn>li>span {
+    #s4-btn>li span.s4 {
         font-size: 0.7vw;
         color: #747474;
+    }
+
+    #s4-btn>li.on span.s4 {
+        color: var(--white);
     }
 
     .tab h3 {
