@@ -50,3 +50,8 @@ input {
     background: none;
     padding: 0;
 }
+
+::selection {
+    color: #fff;
+    background: #43C6B5;
+}
