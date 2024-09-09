@@ -209,6 +209,7 @@ section>h2 {
 }
 
 #s4-btn {
+    margin-top: 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -218,6 +219,10 @@ section>h2 {
     padding: 4px 8px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#s4-btn>li {
+    margin: 8px 0;
 }
 
 #s4-btn>li.on>span {
@@ -238,6 +243,9 @@ section>h2 {
 #s4-main-tab {
     margin-top: 24px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tab {
@@ -253,8 +261,10 @@ section>h2 {
 }
 
 .s4-tx-btn {
+    height: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .s4-tx-btn button {
@@ -266,6 +276,10 @@ section>h2 {
 
 .s4-tx>p {
     margin: 8px 0;
+}
+
+.s4-img {
+    margin-top: 24px;
 }
 
 /* MB section5 */
