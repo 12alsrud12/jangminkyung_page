@@ -12,7 +12,8 @@ ul {
     margin: 0;
 }
 
-ul {
+ul,
+li {
     padding: 0;
     list-style: none;
 }
@@ -20,7 +21,10 @@ ul {
 a {
     text-decoration: none;
 }
-body {background: #fff;}
+
+body {
+    background: #fff;
+}
 
 button {
     border: none;

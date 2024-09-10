@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+div.tab-cont1 {
+    width: 234px;
+    height: 35px;
+    border: 1px solid #192547;
+    border-radius: 15px;
+}
+
+div.tab-cont1>ul {
+    display: flex;
+    align-items: center;
+}
+
+div.tab-cont1>ul>li {
+    width: 78px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.tab-cont1>ul>li.on {
+    background: #BED600;
+    border-radius: 15px;
+}

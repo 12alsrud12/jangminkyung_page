@@ -128,7 +128,7 @@
     font-size: 20px;
 }
 
-.tabs div {
+.tabs>div {
     display: none;
     position: absolute;
     width: 1198px;
