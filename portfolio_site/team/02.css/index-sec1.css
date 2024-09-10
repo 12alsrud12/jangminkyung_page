@@ -1,10 +1,12 @@
 @charset "utf-8";
 
+/* tab-cont1 */
 div.tab-cont1 {
     width: 234px;
     height: 35px;
     border: 1px solid #192547;
     border-radius: 15px;
+    margin-bottom: 12px;
 }
 
 div.tab-cont1>ul {
@@ -23,4 +25,49 @@ div.tab-cont1>ul>li {
 div.tab-cont1>ul>li.on {
     background: #BED600;
     border-radius: 15px;
+}
+
+/* tab-cont2 */
+div.tab-cont2 {
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+
+div.tab-cont2 .dcg {
+    width: 207px;
+    height: 58px;
+    margin-right: 72px;
+}
+
+div.tab-cont2 div.select {
+    margin-right: 62px;
+}
+
+div.tab-cont2 div.select>p {
+    margin: 0;
+}
+
+div.tab-cont2 div.select>select {
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #192547;
+    background: none;
+}
+
+div.tab-cont2 div.select>select {
+    width: 300px;
+}
+
+div.tab-cont2 div.select:last-of-type>select {
+    width: 190px;
+}
+
+button.hggjg {
+    width: 180px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 18px;
+    font-family: "GmarketSansTTFBold";
+    font-size: 16px;
 }
