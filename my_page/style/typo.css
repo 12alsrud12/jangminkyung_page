@@ -86,6 +86,10 @@ header.action a {
     line-height: 2;
 }
 
+#sec2-tabs>#tab1 p {
+    font-size: 4vw;
+}
+
 /* section3 */
 #skill p {
     font-size: 4vw;
@@ -123,6 +127,10 @@ header.action a {
 
 .s4-tx-btn>button {
     color: var(--color6);
+}
+
+.s4-tx {
+    text-align: center;
 }
 
 /* section5 */
@@ -293,6 +301,10 @@ footer {
 
     .s4-tx-btn button {
         font-size: 1vw;
+    }
+
+    .s4-tx {
+        text-align: left;
     }
 
     /* sec5 */
