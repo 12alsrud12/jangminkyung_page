@@ -135,7 +135,7 @@ header.action a {
 
 /* section5 */
 #s5-bx1>p {
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
     text-shadow: 0 0 4px #fff;
     color: var(--white);
@@ -163,8 +163,8 @@ footer {
         letter-spacing: 16px;
     }
 
-    #tab1 p {
-        font-size: 1.6vw;
+    #sec2-tabs>#tab1 p {
+        font-size: 2vw;
         line-height: 1.5;
     }
 
@@ -195,6 +195,9 @@ footer {
     }
 
     /* sec5 */
+    #s5-bx1>p {
+        font-size: 2vw;
+    }
 
 }
 
@@ -252,7 +255,7 @@ footer {
         letter-spacing: 2px;
     }
 
-    #tab1 p {
+    #sec2-tabs>#tab1 p {
         font-size: 1vw;
         line-height: 2;
     }

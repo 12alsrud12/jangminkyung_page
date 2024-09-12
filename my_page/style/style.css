@@ -158,9 +158,8 @@ section>h2 {
 #tab1 {
     display: flex;
     flex-direction: column;
-    padding: 0 24px;
-    margin: 5% auto 0;
-    height: 250px;
+    padding: 16px 24px;
+    margin: 0 auto;
 }
 
 #tab1 p {
@@ -169,9 +168,7 @@ section>h2 {
 
 #sec2_sub_tit {
     display: flex;
-    position: absolute;
-    left: 10%;
-    bottom: 10%;
+    margin: 0 auto;
 }
 
 #sec2_sub_tit li {
@@ -274,6 +271,10 @@ section>h2 {
     border-radius: 5px;
 }
 
+.s4-tx {
+    margin-bottom: 40px;
+}
+
 .s4-tx>p {
     margin: 8px 0;
 }
@@ -331,8 +332,8 @@ button#exit {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 80px;
+    width: 250px;
+    height: 130px;
 }
 
 /* MB footer */
@@ -391,13 +392,13 @@ footer {
         justify-content: center;
     }
 
-    #tab1 {
-        height: 200px;
-        margin: 5% 0 0 0;
+    #sec2-tabs>#tab1 {
+        margin: 0;
+        padding: 0 24px;
     }
 
     #sec2_sub_tit {
-        bottom: -5%;
+        margin-top: 16px;
     }
 
     #sec2_sub_tit li {
@@ -560,8 +561,9 @@ footer {
         width: 100%;
     }
 
-    #tab1 {
-        margin-left: 100px;
+    #sec2-tabs>#tab1 {
+        height: 500px;
+        padding-left: 100px;
     }
 
     #tab1 p {
@@ -624,6 +626,7 @@ footer {
     .s4-tx {
         width: 467px;
         height: 380px;
+        margin: 0;
     }
 
     .s4-img {
@@ -655,6 +658,7 @@ footer {
         top: 15%;
         font-size: 50px;
     }
+
     /* PC section5 */
 
 }
