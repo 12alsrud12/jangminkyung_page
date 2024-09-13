@@ -284,10 +284,6 @@ footer {
     }
 
     /* sec4 */
-    #s4-btn>li {
-        font-size: 1vw;
-    }
-
     #s4-btn>li span.s4 {
         font-size: 0.7vw;
         color: #747474;
@@ -302,24 +298,20 @@ footer {
         font-size: 1.4vw;
     }
 
-    .tab h3>span {
-        font-size: 1vw;
-    }
-
-    .tab p {
-        font-size: 0.8vw;
-    }
-
+    #s4-btn>li,
+    .tab h3>span,
     .s4-tx-btn button {
         font-size: 1vw;
     }
 
-    .s4-tx {
-        text-align: left;
-    }
-
+    .tab p,
     .s4-img-tx {
         font-size: 0.8vw;
+    }
+
+
+    .s4-tx {
+        text-align: left;
     }
 
     /* sec5 */
