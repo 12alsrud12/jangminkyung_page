@@ -283,6 +283,12 @@ section>h2 {
     margin-top: 24px;
 }
 
+.s4-img-tx {
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
+}
+
 /* popup */
 #modal {
     width: 100vw;
@@ -439,6 +445,8 @@ footer {
         top: 10%;
         left: 17%;
     }
+
+
 
     /* TB sec5 */
     #s5-bx1 {

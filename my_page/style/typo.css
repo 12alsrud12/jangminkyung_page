@@ -133,6 +133,10 @@ header.action a {
     text-align: center;
 }
 
+.s4-img-tx {
+    font-size: 4vw;
+}
+
 /* section5 */
 #s5-bx1>p {
     font-size: 3vw;
@@ -191,6 +195,10 @@ footer {
     }
 
     .s4-tx-btn button {
+        font-size: 3vw;
+    }
+
+    .s4-img-tx {
         font-size: 3vw;
     }
 
@@ -308,6 +316,10 @@ footer {
 
     .s4-tx {
         text-align: left;
+    }
+
+    .s4-img-tx {
+        font-size: 0.8vw;
     }
 
     /* sec5 */
