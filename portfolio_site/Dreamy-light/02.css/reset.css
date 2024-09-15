@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 * {
-    box-sizing: none;
+    box-sizing: border-box;
 }
 
 body,
@@ -11,14 +11,25 @@ p {
     margin: 0;
 }
 
-ul {
+ul,
+li {
     padding: 0;
+    list-style: none;
 }
 
 a {
+    color: #272727;
     text-decoration: none;
 }
 
-input {
+input,
+button {
     border: none;
+    background: none;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
