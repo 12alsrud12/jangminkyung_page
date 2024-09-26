@@ -48,6 +48,10 @@ header.action a {
     color: #272727;
 }
 
+header.action a:hover {
+    color: #006F94;
+}
+
 .main_menu>a {
     font-size: 3vw;
     font-weight: 700;

@@ -34,7 +34,7 @@ header li:hover {
 }
 
 header.action li:hover {
-    background: var(--color2);
+    text-shadow: none;
 }
 
 /* section */
