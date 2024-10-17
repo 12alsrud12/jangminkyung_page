@@ -3,12 +3,8 @@
 /* style guide */
 :root {
     --white: #fff;
-    --color1: #b9ffd4;
-    --color2: #83E2C3;
-    --color3: #43C6B5;
-    --color4: #00A9AA;
-    --color5: #008C9F;
-    --color6: #006F94;
+    --color1: #9B8EFF;
+    --color6: #1D1C89;
 }
 
 body {
@@ -30,7 +26,8 @@ header li {
 }
 
 header li:hover {
-    text-shadow: 0 0 4px #fff;
+    margin-bottom: 8px;
+    transition: .5s ease-out;
 }
 
 header.action li:hover {
@@ -44,7 +41,7 @@ header.action li:hover {
 #my-bg {
     width: 700px;
     height: 570px;
-    background: var(--color6);
+    background: var(--color1);
 }
 
 #sec2-btn li.on {
@@ -55,11 +52,11 @@ header.action li:hover {
 /* sec4 */
 /* sec5 */
 #sec5>.container {
-    background: url(../../assets/index/sec5/sec5-bg.jpg) 50% 50%/cover fixed;
+    background: url(../../assets/index/sec1/sec1.jpg) 50% 50%/cover fixed;
 }
 
 #s5-bx1 {
-    background: rgba(0, 111, 148, 0.7);
+    background: rgba(29, 28, 137, 0.7);
 }
 
 /* footer */

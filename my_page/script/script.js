@@ -22,13 +22,11 @@ window.addEventListener("DOMContentLoaded", () => {
     const s4Btn2 = document.querySelectorAll("#s4-btn>li")[2];
     const s4Btn3 = document.querySelectorAll("#s4-btn>li")[3];
     const s4Btn4 = document.querySelectorAll("#s4-btn>li")[4];
-    const s4Btn5 = document.querySelectorAll("#s4-btn>li")[5];
     const s4tab0 = document.querySelectorAll("#s4-main-tab>li")[0];
     const s4tab1 = document.querySelectorAll("#s4-main-tab>li")[1];
     const s4tab2 = document.querySelectorAll("#s4-main-tab>li")[2];
     const s4tab3 = document.querySelectorAll("#s4-main-tab>li")[3];
     const s4tab4 = document.querySelectorAll("#s4-main-tab>li")[4];
-    const s4tab5 = document.querySelectorAll("#s4-main-tab>li")[5];
 
     // sec4 tab 이벤트
     function resetT() {
@@ -38,14 +36,12 @@ window.addEventListener("DOMContentLoaded", () => {
         s4Btn2.classList.remove("on");
         s4Btn3.classList.remove("on");
         s4Btn4.classList.remove("on");
-        s4Btn5.classList.remove("on");
         // sec4 tab
         s4tab0.classList.remove("on");
         s4tab1.classList.remove("on");
         s4tab2.classList.remove("on");
         s4tab3.classList.remove("on");
         s4tab4.classList.remove("on");
-        s4tab5.classList.remove("on");
     };
 
     s4Btn0.onclick = () => {
@@ -76,12 +72,6 @@ window.addEventListener("DOMContentLoaded", () => {
         resetT();
         s4Btn4.classList.add("on");
         s4tab4.classList.add("on");
-    };
-
-    s4Btn5.onclick = () => {
-        resetT();
-        s4Btn5.classList.add("on");
-        s4tab5.classList.add("on");
     };
 
     // modal popup

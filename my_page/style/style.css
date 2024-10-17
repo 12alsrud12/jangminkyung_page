@@ -7,12 +7,8 @@
 /* style guide */
 :root {
     --white: #fff;
-    --color1: #b9ffd4;
-    --color2: #83E2C3;
-    --color3: #43C6B5;
-    --color4: #00A9AA;
-    --color5: #008C9F;
-    --color6: #006F94;
+    --color1: #9B8EFF;
+    --color6: #1D1C89;
 }
 
 /* header */
@@ -226,7 +222,6 @@ section>h2 {
     background: var(--color6);
 }
 
-
 #s4-btn>li:not(:last-child)::after {
     content: "|";
     margin: 0 8px;
@@ -287,6 +282,11 @@ section>h2 {
     margin-top: 24px;
     width: 100%;
     text-align: center;
+}
+
+.s4-tx-btn>button:hover {
+    background: var(--color6);
+    color: var(--white);
 }
 
 /* popup */
@@ -668,6 +668,9 @@ footer {
     }
 
     /* PC section5 */
+    .mb-tb {
+        display: none;
+    }
 
 }
 
