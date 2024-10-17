@@ -1,12 +1,7 @@
 @charset "utf-8";
 
-/* style guide */
 :root {
     --white: #fff;
-    --color1: #b9ffd4;
-    --color2: #83E2C3;
-    --color3: #43C6B5;
-    --color4: #00A9AA;
-    --color5: #008C9F;
-    --color6: #006F94;
+    --color1: #9B8EFF;
+    --color6: #1D1C89;
 }

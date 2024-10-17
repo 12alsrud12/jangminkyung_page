@@ -1,16 +1,5 @@
 @charset "utf-8";
 
-/* body * {
-    border: 1px solid red;
-} */
-
-/* style guide */
-:root {
-    --white: #fff;
-    --color1: #9B8EFF;
-    --color6: #1D1C89;
-}
-
 /* header */
 #pppp {
     position: fixed;
